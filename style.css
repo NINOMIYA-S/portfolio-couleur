@@ -382,46 +382,73 @@ h2::before {
     width: 50%;
 }
 
-.shop-list img {
-    width: 40%;
-}
-
 .shop-list ul {
     list-style: none;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
+    width: 100%;
+    justify-content: center;
 }
 
-.shop-list h3 {
-    font-weight: 400;
-    font-size: 30px;
-    text-align: center;
+
+.shop-list li {
+    width: 100%;
+    position: relative;
 }
 
+.shop-list a {
+    text-decoration: none;
+    display:flex;
+    margin: 0 auto;
+}
 
 .shop-list p {
+    margin: 20px auto;
+    display: block;
     cursor: pointer;
-    transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
 }
 
 .shop-list p {
     background: rgb(255, 255, 255);
     border: 2px solid rgb(30, 30, 30);
-    border-radius: 60px;
     color: rgb(30, 30, 30);
     display: block;
     font-weight: 600;
     font-size: 15px;
     letter-spacing: 2px;
-    max-width: 200px;
-    padding: 15px 40px;
+    width: 200px;
+    height: 25px;
+    padding: 15px 30px;
     text-align: center;
+    transition: 0.2s;
   }
 
-.shop-list p:hover {
+.shop-list li:hover p {
+    border-radius: 50px;
     background: rgb(30, 30, 30);
     color: rgb(255, 255, 255);
+    transition: 1s;
   }
+
+.shop-list div {
+    display: flex;
+    opacity: 0;
+    width: 0;
+    height: 25px;
+}
+
+.shop-list li:hover div {
+    color: rgb(30, 30, 30);
+    font-weight: 600;
+    font-size: 15px;
+    width: 70%;
+    opacity: 1;
+    padding: 15px 0 15px 40px;
+    margin: 20px 0;
+    transition: 0.7s;
+}
+
+
 
 .news {
     width: 100%;
